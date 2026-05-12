@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Khanyisa Mabasa futuristic AI software developer portfolio with interactive Khanyisa_AI assistant.">
+  <title>Khanyisa Mabasa | AI Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="particleCanvas" aria-hidden="true"></canvas>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="#home">
+        <span class="brand-orb"></span>
+        <span>Khanyisa<span>_AI</span></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#assistant">AI Assistant</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Next-generation developer portfolio</p>
+          <h1>Khanyisa Mabasa</h1>
+          <p class="hero-title">Junior AI Software Developer | Data Analytics | Interactive Web Experiences</p>
+          <p class="type-line"><span id="typingText"></span><span class="caret">|</span></p>
+          <p class="intro">
+            I build AI-powered web applications, interactive 3D prototypes, browser-based games, and data-informed digital experiences with Python, SQL, JavaScript, Bubble.io, GDevelop, and modern frontend tools.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn ghost" href="assets/Khanyisa-Mabasa-CV.pdf" target="_blank" rel="noopener">Download CV</a>
+            <a class="btn ghost" href="#assistant">Talk to Khanyisa_AI</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="holo-ring ring-one"></div>
+          <div class="holo-ring ring-two"></div>
+          <img src="assets/khanyisa-corporate-robot.png" alt="Clean corporate robotic cartoon portrait of Khanyisa Mabasa with black cornrows and a polished cybernetic neck">
+          <div class="scan-line"></div>
+          <div class="status-chip chip-top">ONLINE</div>
+          <div class="status-chip chip-bottom">AI PORTFOLIO INTERFACE</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-heading reveal">
+        <p class="eyebrow">About</p>
+        <h2>Creative software thinking for intelligent digital experiences.</h2>
+      </div>
+      <div class="about-layout">
+        <article class="glass-panel reveal">
+          <p>
+            I am a motivated junior AI Software Developer based in Midrand, South Africa, with hands-on experience building AI-powered web applications, interactive 3D prototypes, and browser-based game experiences.
+          </p>
+          <p>
+            I obtained AI Software Development skills through an NQF Level 5 QCTO-aligned programme, and I have also completed the Google Data Analytics Professional Certificate through Coursera.
+          </p>
+          <p>
+            My work combines Python, SQL, JavaScript, Git, Bubble.io, GDevelop, Three.js, data analysis, and practical product thinking to create useful, engaging digital experiences.
+          </p>
+        </article>
+        <div class="signal-stack reveal">
+          <div><strong data-count="24">0</strong><span>Core skills</span></div>
+          <div><strong data-count="4">0</strong><span>Featured projects</span></div>
+          <div><strong data-count="3">0</strong><span>Certificates</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Skills</p>
+        <h2>Technical abilities built for modern AI-powered products.</h2>
+      </div>
+      <div class="skills-feature">
+        <div class="recruiter-summary reveal">
+          <strong>Open to junior roles in AI software development, web development, data analytics, and technical support.</strong>
+          <p>Strongest in turning practical ideas into working prototypes, interactive web experiences, game concepts, and data-informed products.</p>
+        </div>
+        <figure class="skills-portrait reveal">
+          <img src="assets/skills-cover.png" alt="Small corporate tech portrait representing Khanyisa's software, AI, web, and data skills">
+        </figure>
+      </div>
+      <div class="skills-breakdown">
+        <article class="skill-group reveal">
+          <h3>Software & Web</h3>
+          <p>Python, JavaScript, SQL, HTML5, CSS, Git, GitHub, API integration, responsive frontend prototyping.</p>
+        </article>
+        <article class="skill-group reveal">
+          <h3>AI & Machine Learning</h3>
+          <p>CNNs, supervised learning, regression models, model training, feature engineering, data preprocessing, evaluation.</p>
+        </article>
+        <article class="skill-group reveal">
+          <h3>Data Analytics</h3>
+          <p>Spreadsheets, SQL, Tableau, R programming, data cleaning, visualization, analysis, and insight communication.</p>
+        </article>
+        <article class="skill-group reveal">
+          <h3>Interactive Products</h3>
+          <p>Three.js, Bubble.io workflows, Bubble database design, GDevelop game logic, timers, scoring systems, leaderboards.</p>
+        </article>
+      </div>
+      <div class="card-grid" id="skillsGrid"></div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Projects</p>
+        <h2>Futuristic project work with creative and technical range.</h2>
+      </div>
+      <div class="project-grid" id="projectGrid"></div>
+    </section>
+
+    <section class="section experience" id="experience">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Experience</p>
+        <h2>Hands-on training and project experience recruiters can scan quickly.</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <span>June 2025 - May 2026</span>
+          <h3>AI Software Developer</h3>
+          <p>Retro Rabbit / Synergy Transformation Solution</p>
+          <ul>
+            <li>Participated in structured AI and software development training aligned with QCTO standards.</li>
+            <li>Built and tested machine learning models using Python, Git, debugging, and clean code practices.</li>
+            <li>Developed AI-powered prototypes combining user input, web interfaces, and interactive outputs.</li>
+          </ul>
+        </article>
+        <article class="timeline-item reveal">
+          <span>September 2023 - August 2024</span>
+          <h3>Technical Support Training Experience</h3>
+          <p>Makwa IT Technologies</p>
+          <ul>
+            <li>Assisted users with hardware and software troubleshooting.</li>
+            <li>Diagnosed system errors and supported practical issue resolution.</li>
+            <li>Built communication, problem-solving, and support skills for technical environments.</li>
+          </ul>
+        </article>
+      </div>
+      <div class="process-grid">
+        <article class="process-step reveal">
+          <span>01</span>
+          <h3>Discover</h3>
+          <p>Clarify the audience, product goal, visual direction, and the interaction that should feel memorable.</p>
+        </article>
+        <article class="process-step reveal">
+          <span>02</span>
+          <h3>Prototype</h3>
+          <p>Build fast working versions with HTML, CSS, JavaScript, Bubble.io, GDevelop, or AI concept tools.</p>
+        </article>
+        <article class="process-step reveal">
+          <span>03</span>
+          <h3>Polish</h3>
+          <p>Refine responsiveness, motion, clarity, accessibility, and details that help the product feel complete.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section assistant-section" id="assistant">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Built-In AI Assistant</p>
+        <h2>Ask Khanyisa_AI about my portfolio.</h2>
+      </div>
+
+      <div class="ai-console reveal">
+        <aside class="question-panel">
+          <div class="assistant-id">
+            <span class="assistant-avatar">K_AI</span>
+            <div>
+            <strong>Khanyisa_AI</strong>
+              <p>Recruiter portfolio assistant</p>
+            </div>
+          </div>
+          <p class="panel-note">Click a recruiter question or type your own. This assistant runs directly inside the website using JavaScript portfolio intelligence.</p>
+          <div class="suggestions" id="suggestions"></div>
+        </aside>
+
+        <div class="chat-panel">
+          <div class="chat-header">
+            <span class="live-dot"></span>
+            <strong>Khanyisa_AI is online</strong>
+            <small>Local portfolio intelligence</small>
+          </div>
+          <div class="messages" id="chatMessages" aria-live="polite"></div>
+          <form class="chat-form" id="chatForm">
+            <input id="chatInput" type="text" placeholder="Ask about Khanyisa's skills, projects, certificates, services..." autocomplete="off">
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Services</p>
+        <h2>What I can create for teams, brands, and digital products.</h2>
+      </div>
+      <div class="card-grid" id="servicesGrid"></div>
+    </section>
+
+    <section class="section certifications" id="certifications">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Certification</p>
+        <h2>Certificates that connect AI, support, and data analytics.</h2>
+      </div>
+      <div class="certificate-grid">
+        <article class="certificate reveal">
+          <div class="cert-orb">DATA</div>
+          <div>
+            <p class="eyebrow">Coursera | Google | Jun 15, 2025</p>
+            <h3>Google Data Analytics Professional Certificate</h3>
+            <p>
+              Completed eight Google courses covering spreadsheets, SQL, Tableau, R, data preparation, cleaning, analysis, visualization, and a capstone case study.
+            </p>
+            <a class="mini-btn cert-link" href="https://coursera.org/verify/professional-cert/EOGEI62EMHSH" target="_blank" rel="noopener">Verify Certificate</a>
+          </div>
+        </article>
+        <article class="certificate reveal">
+          <div class="cert-orb">AI</div>
+          <div>
+            <p class="eyebrow">MICTSETA / QCTO | NQF Level 5 | 2026</p>
+            <h3>AI Software Developer</h3>
+            <p>
+              Practical AI and software development training covering Python, machine learning concepts, Git, debugging, documentation, and AI-powered prototypes.
+            </p>
+          </div>
+        </article>
+        <article class="certificate reveal">
+          <div class="cert-orb">IT</div>
+          <div>
+            <p class="eyebrow">MICTSETA | NQF Level 4 | 2024</p>
+            <h3>Technical Support</h3>
+            <p>
+              Technical support training focused on hardware and software troubleshooting, diagnosing system errors, communication, and practical issue resolution.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Start a conversation about a role, project, or collaboration.</h2>
+      </div>
+      <div class="contact-layout">
+        <div class="contact-card reveal">
+          <a class="email" href="mailto:khanyimabasaa@gmail.com">khanyimabasaa@gmail.com</a>
+          <p class="contact-meta">Midrand, South Africa | 063 140 7110</p>
+          <div class="socials">
+            <a href="assets/Khanyisa-Mabasa-CV.pdf" target="_blank" rel="noopener">Download CV</a>
+            <a href="https://www.linkedin.com/in/khanyisa-mabasa?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/Khanyisa-Mabasaa" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://ai-engineeringg.netlify.app" target="_blank" rel="noopener">AI Prototype</a>
+            <a href="https://catchymash-web-31017.bubbleapps.io/version-test/?debug_mode=true" target="_blank" rel="noopener">Bubble App</a>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contactForm">
+          <label>Name<input type="text" placeholder="Your name" required></label>
+          <label>Email<input type="email" placeholder="you@example.com" required></label>
+          <label>Message<textarea rows="5" placeholder="Tell me about the opportunity" required></textarea></label>
+          <button class="btn primary" type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <a class="floating-ai" href="#assistant" aria-label="Open Khanyisa_AI assistant">
+    <span></span>
+    Talk to Khanyisa_AI
+  </a>
+
+  <footer class="footer">
+    <strong>Khanyisa Mabasa</strong>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#assistant">AI Assistant</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <p>&copy; <span id="year"></span> Khanyisa Mabasa. Future-built portfolio.</p>
+  </footer>
+
+  <div class="toast" id="toast">Message ready. Thank you for reaching out.</div>
+  <script src="script.js"></script>
+</body>
+</html>
